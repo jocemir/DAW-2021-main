@@ -11,7 +11,7 @@ app.use(express.json());
 
 //Rota principal
 app.get('/', (req, res) => {
-    res.send(`It's working!`);
+    res.send(`It's working!2`);
 });
 
 //Demais rotas
@@ -20,4 +20,5 @@ app.use('/products', productRouter);
 
 app.listen(PORT, () => {
     console.log(`Executando na porta ${PORT}`);
+    
 });

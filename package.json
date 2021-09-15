@@ -1,0 +1,24 @@
+{
+  "name": "daw-2021-main",
+  "version": "1.0.0",
+  "description": "Repositório utilizado nas aulas de Desenvolvimento de Aplicações Web em 2021 - Faculdade Mater Dei.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jocemir/DAW-2021-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jocemir/DAW-2021-main/issues"
+  },
+  "homepage": "https://github.com/jocemir/DAW-2021-main#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.11",
+    "mysql": "^2.18.1"
+  }
+}

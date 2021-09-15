@@ -3,7 +3,7 @@ const knex = require('knex')({
     connection: {
         host: 'mysql.ideagestor.com.br',
         user: 'ideagestor09',
-        password: 'senha12345',
+        password: '88304918abc',
         database: 'ideagestor09'
     }
 });

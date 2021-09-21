@@ -4,7 +4,7 @@ module.exports = {
     
     find: () => {
         //select * from estado
-        return knex.select('p.*', 'g.nome as estado_nome').from('estado as p').innerJoin('estado as g', 'g.id', 'p.estado_id');
+        return knex.select('p.*', 'g.name as estado_nome').from('estado as p').innerJoin('estado as g', 'g.id', 'p.estado_id');
     },
 
     findById: (params) => {

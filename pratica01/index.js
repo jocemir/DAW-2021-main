@@ -1,5 +1,5 @@
 const express = require('express');
-const groupRouter = require('./routes/estado-route');
+const groupRouter = require('./routes/cidade-route');
 
 const app = express();
 

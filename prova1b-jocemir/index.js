@@ -11,7 +11,7 @@ app.use(express.json());
 
 //Rota principal
 app.get('/', (req, res) => {
-    res.send(`It's working!2`);
+    res.send(`Olá Mundo = Prova`);
 });
 
 //Demais rotas

@@ -1,4 +1,4 @@
-const repository = require('../models/cidade-repository');
+const repository = require('../models/cidade-respository');
 
 module.exports = {
 

@@ -1,6 +1,5 @@
 const express = require('express');
-const groupRouter = require('./routes/cidade-route');
-const productRouter = require('./routes/estado-route');
+const groupRouter = require('./routes/estado-route');
 
 const app = express();
 
@@ -11,12 +10,12 @@ app.use(express.json());
 
 //Rota principal
 app.get('/', (req, res) => {
-    res.send(`It's working!2`);
+    res.send(`It's working! pratica01`);
 });
 
 //Demais rotas
-app.use('/cidade', cidadeRouter);
-app.use('/estado', estadotRouter);
+app.use('/cidade', groupRouter);
+app.use('/estado', groupRouter);
 
 app.listen(PORT, () => {
     console.log(`Executando na porta ${PORT}`);

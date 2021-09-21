@@ -1,17 +1,8 @@
 {
-
-  
-  "name": "pratica01",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {},
-  "description": ""
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "knex": "^0.95.11",
+    "mysql": "^2.18.1"
+  }
 }

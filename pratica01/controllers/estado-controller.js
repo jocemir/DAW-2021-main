@@ -1,4 +1,4 @@
-const repository = require('../models/estado-repository');
+const repository = require('../models/estado-respository');
 
 module.exports = {
 

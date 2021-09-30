@@ -1,4 +1,4 @@
-//Conaxão com o Banco
+//Conexão com o Banco
 
 const knex = require('knex')({
     client: 'mysql',

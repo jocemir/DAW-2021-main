@@ -10,7 +10,7 @@ app.use(express.json());
 
 //Rota principal
 app.get('/', (req, res) => {
-    res.send(`It's working! pratica01`);
+    res.send(`It's working! pratica02`);
 });
 
 //Demais rotas

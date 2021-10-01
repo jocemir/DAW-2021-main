@@ -4,16 +4,16 @@ module.exports = {
     
     find: () => {
         //select * from estado
-        return knex.select('p.*', 'g.name as estado_nome').from('estado as p').innerJoin('estado as g', 'g.id', 'p.estado_id');
+        return knex.select('p.*', 'g.name as group_name').from('estado as p').innerJoin('group as g', 'g.id', 'p.group_id');
     },
 
     findById: (params) => {
         //select * from estado where id = params.id
-        return knex.select('p.*', 'g.nome as estado_nome').from('estado as p').innerJoin('estado as g', 'g.id', 'p.estado_id').where('p.id', params.id);
+        return knex.select('p.*', 'g.name as group_name').from('estado as p').innerJoin('group as g', 'g.id', 'p.group_id').where('p.id', params.id);
     }, 
 
     create: (params) => {
-        //insert into estado(name, description, price, likes, estado_id) values (params.name, params.description, params.price, params.likes, price.estado_id)
+        //insert into estado(name, description, price, likes, group_id) values (params.name, params.description, params.price, params.likes, price.group_id)
         return knex.insert(params).into('estado');
     },
 

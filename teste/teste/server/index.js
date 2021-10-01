@@ -13,7 +13,7 @@ app.use(express.json());
 
 //Rota principal
 app.get('/', (req, res) => {
-    res.send(`Olá Mundo = Prova22`);
+    res.send(`Olá Mundo = Prova`);
 });
 
 //Demais rotas

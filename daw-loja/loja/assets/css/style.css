@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    color: #29292e;
+}
+
+header{
+    background-color: #fff;
+    
+}
+
+header .navbar-brand,
+header nav li a.active,
+header nav li a:hover{
+    color: #a237cc !important;
+
+}
+header nav li{
+    text-transform: uppercase;
+}
+
+.collection{
+    display: flex;
+    flex-direction: row;
+    
+}

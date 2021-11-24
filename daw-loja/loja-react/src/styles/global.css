@@ -4,51 +4,11 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 body {
-    background-color: #FFF;
+    background-color: #ffffff;
     color: #29292e;
-}
-
-header {
-    background-color: #fff;
-}
-header .navbar-brand,
-header nav li a.active,
-header nav li a:hover {
-    color: #a237cc !important;
-}
-header nav li {
-    text-transform: uppercase;
-}
-
-#carousel .carousel-caption {
-    display: flex !important;
-    flex-direction: column;
-    align-items: start;
-    width: 450px;
-    bottom: 128px;
-  }
-  #carousel .carousel-caption h5,
-  #carousel .carousel-caption h4 {
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-  #carousel .carousel-caption h4 {
-    font-size: 32px;
-  }
-  #carousel .carousel-caption h4 span {
-    color: #a237cc;
-  }
-  #carousel .carousel-caption .fw-light {
-    text-align: left;
-  }
-  #carousel .carousel-caption .btn-primary {
-    text-transform: uppercase;
-    font-weight: 400; 
-    background-color: #a237cc;
-    border-color: #a237cc;
-  
-  }
+}   
 
 .products,
 .collection {
@@ -57,94 +17,4 @@ header nav li {
     gap: 16px;
     margin: 32px 0;
     justify-content: center;
-}
-
-.products .card-body .details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 32px;
-}
-.products .details .price {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-.products .details .star-rating,
-.products .details .price h3 {
-    color:#a237cc;
-}
-.products .details .price p {
-    font-size: 12px;
-}
-
-.newsletter {
-    background-color: #f7f9fa;
-    margin: 32px 0;
-    padding: 32px 0;
-}
-.newsletter .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-}
-.newsletter h2 {
-    color:#a237cc;
-    font-weight: 400;
-    font-size: 40px;
-}
-.newsletter form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:16px;
-}
-.newsletter form input {
-    width: 300px;
-}
-.newsletter form button {
-    background-color:#a237cc;
-    border-color:#a237cc;
-    text-transform: uppercase;
-}
-.newsletter form button:hover {
-    background-color:#79249b;
-    border-color:#79249b;
-}
-
-.brands ul {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    list-style: none;
-}
-.brands ul li {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    list-style: none;   
-}
-
-footer {
-    background-color: #515D6A;
-    padding: 48px 0;
-    color: #fff;
-}
-footer h5 {
-    margin: 0 0 32px 48px;
-}
-footer ul {
-    list-style: none;
-    margin-left: 16px;
-}
-footer li a {
-    color: #fff;
-    text-decoration: none;
-}
-footer li a:hover {
-    color: #999;
-    text-decoration: underline;
 }

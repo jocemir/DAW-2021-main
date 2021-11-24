@@ -1,3 +1,6 @@
+
+import './style.css';
+
 import imgCollection1 from "../../assets/images/collection1.jpg";
 import imgCollection2 from "../../assets/images/collection2.jpg";
 import imgCollection3 from "../../assets/images/collection3.jpg";

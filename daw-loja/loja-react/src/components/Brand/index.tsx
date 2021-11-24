@@ -1,23 +1,20 @@
 import { Brand } from '../../@types';
-import'.style.css';
+import './style.css';
 
-
-type BrandProp = {
-    itens: Array<Brand>;
+type BrandProps = {
+    items: Array<Brand>;
 }
 
-export function Brand(props: BrandProp){
-    <div className="brands">
-
-        <ul>
-           
-                props.itens.map(item => {
-                    return{
-                        <li><img src={item.source} alt={item.alt} /></li>
-                   )
-           })}     
-            
-        </ul>
-    </div>
+export function Brand(props: BrandProps) {
+    return (
+        <div className="brands">
+            <ul>
+                {props.items.map(item => { 
+                    return (
+                        <li><img src={item.source}  alt={item.alt}/></li>
+                    )
+                })}
+            </ul>
+        </div>
     )
 }

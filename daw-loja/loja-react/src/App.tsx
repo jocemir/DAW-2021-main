@@ -1,9 +1,14 @@
-import { Collection } from './components/Collection'
+
 import { Header } from './components/Header'
+import { Newsletter } from './components/Newsletter'
+import { Brand } from './components/Brand'
+import { Collection } from './components/Collection'
+
 import { Footer } from './components/Footer'
 import { Product } from './components/Product'
-import { Brand } from './components/Brand'
-import { Newsletter } from './components/Newsletter'
+
+
+
 
 
 function App() {
@@ -14,16 +19,14 @@ function App() {
     {alt: 'imagem4', source: './assets/images/brand4.png'},
     {alt: 'imagem5', source: './assets/images/brand5.png'}
   ]
+
   return (
     <div>
       <Header/>
       <main>
         <div className="container">
-          
           <Collection/>
-          
           <Product/>
-          
         </div>
 
         <Newsletter/>
@@ -36,3 +39,6 @@ function App() {
     </div>
   );
 }
+
+
+export default App;

@@ -1,5 +1,5 @@
 export type Brand = {
-    alt:String;
+    alt:string;
     source: string;
 
 }

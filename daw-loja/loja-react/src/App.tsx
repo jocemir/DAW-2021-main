@@ -1,7 +1,7 @@
 
 import { Header } from './components/Header'
 import { Newsletter } from './components/Newsletter'
-import { Brand } from './components/Brand'
+import { Brands } from './components/Brand'
 import { Collection } from './components/Collection'
 
 import { Footer } from './components/Footer'
@@ -32,7 +32,7 @@ function App() {
         <Newsletter/>
 
         <div className="container">
-          <Brand items={brands}/>
+          <Brands items={brands}/>
         </div>
       </main>
       <Footer/>

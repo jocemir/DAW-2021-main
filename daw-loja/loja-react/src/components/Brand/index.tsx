@@ -5,7 +5,7 @@ type BrandProps = {
     items: Array<Brand>;
 }
 
-export function Brand(props: BrandProps) {
+export function Brands(props: BrandProps) {
     return (
         <div className="brands">
             <ul>

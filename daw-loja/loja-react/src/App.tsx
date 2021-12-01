@@ -3,9 +3,12 @@ import { Header } from './components/Header'
 import { Newsletter } from './components/Newsletter'
 import { Brands } from './components/Brand'
 import { Collection } from './components/Collection'
-
 import { Footer } from './components/Footer'
-import { Product } from './components/Product'
+
+import { Products } from './components/Product'
+import { useEffect, useState } from 'react'
+import { Product } from './@types'
+import axios from 'axios'
 
 
 
@@ -18,7 +21,20 @@ function App() {
     {alt: 'imagem3', source: './assets/images/brand3.png'},
     {alt: 'imagem4', source: './assets/images/brand4.png'},
     {alt: 'imagem5', source: './assets/images/brand5.png'}
-  ]
+  ];
+
+  const[products, setproducts] = useState<Product[]> ([] as Product[]);
+
+  useEffect(( ) => {
+  
+  axios.get('http://localhost:3333/products')
+  .then(result =>{
+    console.log('Oba! ', result);
+  })
+  .catch(error =>{   
+    console.log('Puts deu pau', error);
+  })
+  },[]);  
 
   return (
     <div>
@@ -26,7 +42,8 @@ function App() {
       <main>
         <div className="container">
           <Collection/>
-          <Product/>
+          <Products items={products}/>
+          
         </div>
 
         <Newsletter/>

@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const groupRouter = require('./routes/group-router');
 const productRouter = require('./routes/product-router');
 const cidadeRouter = require('./routes/cidade-router');
@@ -10,6 +11,7 @@ const PORT = 3333;
 
 //Middleware
 app.use(express.json());
+app.use(cors());
 
 //Rota principal
 app.get('/', (req, res) => {

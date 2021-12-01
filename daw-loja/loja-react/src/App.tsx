@@ -29,7 +29,7 @@ function App() {
   
   axios.get('http://localhost:3333/products')
   .then(result =>{
-    console.log('Oba! ', result);
+    setproducts(result.data);
   })
   .catch(error =>{   
     console.log('Puts deu pau', error);
